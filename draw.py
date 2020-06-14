@@ -1,9 +1,9 @@
 def blood(c, options = {}):
     palette = {
-        'background': '#282a36',
-        'background-alt': '#282a36', 
+        'background': '#282c34',
+        'background-alt': '#282c34', 
         'background-attention': '#181920',
-        'border': '#282a36',
+        'border': '#282c34',
         'current-line': '#44475a',
         'selection': '#44475a',
         'foreground': '#f8f8f2',
@@ -99,7 +99,7 @@ def blood(c, options = {}):
     c.colors.hints.bg = palette['background']
 
     ## Font color for hints.
-    c.colors.hints.fg = palette['purple']
+    c.colors.hints.fg = palette['yellow']
 
     ## Hints
     c.hints.border = '1px solid ' + palette['background-alt']
@@ -111,7 +111,7 @@ def blood(c, options = {}):
     c.colors.keyhint.bg = palette['background']
 
     ## Text color for the keyhint widget.
-    c.colors.keyhint.fg = palette['purple']
+    c.colors.keyhint.fg = palette['yellow']
 
     ## Highlight color for keys to complete the current keychain.
     c.colors.keyhint.suffix.fg = palette['selection']
@@ -171,7 +171,7 @@ def blood(c, options = {}):
     c.colors.statusbar.command.bg = palette['background']
 
     ## Foreground color of the statusbar in command mode.
-    c.colors.statusbar.command.fg = palette['pink']
+    c.colors.statusbar.command.fg = palette['yellow']
 
     ## Background color of the statusbar in private browsing + command mode.
     c.colors.statusbar.command.private.bg = palette['background']
